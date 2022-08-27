@@ -1,11 +1,17 @@
 body {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background: radial-gradient(circle,rgb(180, 197, 224), rgb(77, 102, 143))
+    background: radial-gradient(circle,rgb(180, 197, 224), rgb(77, 102, 143));
+    
+    
 }
 
 #first-main-selector{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     position: relative;
+    
+}
+
+.all-selectors{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
 }
 
 #first-main-selector::before{
@@ -22,8 +28,7 @@ body {
 
 }
   
-#second-main-selector{
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+#second-main-selector{  
     position: relative;
 }
 
@@ -42,28 +47,76 @@ body {
 
 
 h1[class=title]{
-    color:rgb(121, 125, 11);
+    text-align: center;
+    font-family: "BALLOON DREAMS", cursive;
+    src: url("C:\Users\Core i5 HB\AppData\Local\Microsoft\Windows\Fonts\BALLOON DREAMS.ttf");
+    background: -webkit-linear-gradient(rgb(167, 217, 205), rgba(167, 217, 205, 0.3));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-h1.title{
-    text-align:center
-}
+
+
 
 dl dt.subtype_selectors{
     color:blue;
 }
 
-
-
+.main_selectors{
+    text-decoration: overline;
+}
 
 img[src ^= "../HTML/"]{
-    border: 5px solid deepskyblue;
+    border: 10px double deepskyblue;
+    padding-top: 4px;
 }
-p{
-    width: 5%;
+
+.grid-container{
+        background-color: rgb(46, 60, 82);
+        border-color: blueviolet;
+        border-width: 70px;
+        margin: 10px;
+        height: 400px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        align-content:center;
+        justify-content:space-around;
+        grid-row-gap: 30px;
+        
+        
+        
+
 }
-p::first-line {
-    color: rgb(74, 224, 222);
-    text-transform: uppercase;
-  }
 
+.grid-item{
+    font-family: fantasy;
+    text-align: center;
+    font-size: 25px;
+    width: 70px;
+    line-height: 40px;
+    margin: 10px;
+    
+}
 
+#django-logo{
+    width: 100%;
+    height: 300px;
+    
+}
+
+#python-logo{
+    width: 100%;
+    height: 300px;
+    
+}
+
+#gratitude{
+    text-align: center;
+    text-transform: capitalize;
+    color:azure;
+}
+
+.special-mention{
+    width: 40vw;
+    height: 60vh;
+}
