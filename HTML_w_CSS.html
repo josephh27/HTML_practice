@@ -2,7 +2,7 @@
 <html>
     <head>
             <link rel = "stylesheet" style = "text/css" href =
-             "../CSS/style.css">
+             "style.css">
             <title>A boring website</title>
             <style>
 
@@ -13,7 +13,7 @@
             <h1 class="title">Welcome to the CSS Lobby</h1>
         </header>
         <main>
-            <div id = "first-main-selector">      
+            <div class = "all-selectors">      
             <h3 class = "main_selectors">Basic Selectors</h3> 
             <dl>
                 <dt class = "subtype_selectors">Universal Selector</dt>
@@ -28,7 +28,7 @@
                 <dd>-Selects all elements containg the specified attribute.</dd>
             </dl>
             </div>
-            <div id = "second-main-selector">
+            <div class = "all-selectors">
                 <h3 class = "main_selectors">Grouping Selectors</h3>
                 <dl>
                     <dt class = "subtype_selectors">Selector List</dt>
@@ -36,7 +36,7 @@
                 </dl>
             </div>
                 
-            
+            <div class = "all-selectors">
                 <h3 class = "main_selectors">Combinators</h3>
                 <dl>
                     <dt class = "subtype_selectors">Desecendant Combinator</dt>
@@ -48,20 +48,61 @@
                     <dt class = "subtype_selectors">Adjacent sibling combinator</dt>
                     <dd>-Selects the second element if and only if it comes immediately after the specified fisrt element.</dd>                
                 </dl>
-            
-            <h3 class = "main_selectors">Pseudo-classes and Pseudo-elements</h3>
+            </div>
+                
+            <div class = "all-selectors">
+                <h3 class = "main_selectors">Pseudo-classes and Pseudo-elements</h3>
             <dl>
                 <dt class = "subtype_selectors">Pseudo Classes</dt>
                 <dd>-Selects the element during a specified special state.</dd>
                 <dt class = "subtype_selectors">Pseudo Elements</dt>
                 <dd>-Selects the specified part of the element.</dd>
             </dl>
+            </div>
+            <div class = "grid-container">
+                <div class = "grid-item" style = "background: red;">
+                    <img src = "https://i.pinimg.com/originals/8f/ad/12/8fad125b8f6082bdb7deb0aa593dfb49.jpg"
+                        style = "width: 150%">
+                </div>
+                <div class = "grid-item" style = "background: blue;">
+                    <img src = "https://i.pinimg.com/originals/8f/ad/12/8fad125b8f6082bdb7deb0aa593dfb49.jpg"
+                        style = "width: 150%">
+                </div>
+                <div class = "grid-item"  style = "background: yellow;">
+                    <img src = "https://i.pinimg.com/originals/8f/ad/12/8fad125b8f6082bdb7deb0aa593dfb49.jpg"
+                        style = "width: 150%">
+                </div>
+                <div class = "grid-item"  style = "background: pink;">
+                    <img src = "https://i.pinimg.com/originals/8f/ad/12/8fad125b8f6082bdb7deb0aa593dfb49.jpg"
+                        style = "width: 150%">
+                </div>
+                <div class = "grid-item"  style = "background: aqua;">
+                    <img src = "https://i.pinimg.com/originals/8f/ad/12/8fad125b8f6082bdb7deb0aa593dfb49.jpg"
+                        style = "width: 150%">
+                </div>
+            </div>
         </main>
+
         <footer>
-            <h2 style = "left:1075px; top:50px; position:absolute">CSS</h2>
-            <h2 style = "left:1275px; top:50px; position:absolute">HTML</h2>
-            <img src = "../HTML/CSS3_logo_and_wordmark.svg.png" alt = "Sorry it did not load." width = "200" style = "position:absolute; left:990px; top:97px">
-            <img style = "position:relative; left:1200px; top:-650px; " src = "../HTML/html_logo.png" alt = "Sorry it did not load." width = "200">
+            <div class = "html-css-logo"> 
+                <h2 style = "left:1055px; top:50px; position:absolute">CSS</h2>
+                <h2 style = "left:1262px; top:50px; position:absolute">HTML</h2>
+                <img src = "../HTML/CSS3_logo_and_wordmark.svg.png" alt = "Sorry it did not load." width = "200" style = "position:absolute; left:970px; top:97px; background-color: pink;">
+                <img style = "position:absolute; left:1191px; top:97px; " src = "../HTML/html_logo.png" alt = "Sorry it did not load." width = "200">          
+            </div>
+            <div style="align-items: center; display: flex; background-color: pink; flex-wrap: nowrap; justify-content:space-between;">
+                <div style = "order: 1; display: flex; flex-shrink: 1">
+                    <img id = "django-logo"  src = "https://lh6.googleusercontent.com/rU8dZ0x67y63AeujFhM79UG_I3ZagEqTmDffagrUVuBI5eXPHtW2Z7zP1KU1MLKtl0wU5eNS_QHU-9v3GUJgxlKYeAR1yKADY8xCj7xMrpL8z9Rr2Zde9_OGsmXTigvBr7DEWggV">   
+                </div>
+                <div style = "order:2; text-align:center; font-size:29.65px; font-family:Impact, 'Times New Roman', Times, serif; flex-shrink: 0">
+                        <p><b><--Next to conquer--></b><br>okay</p>
+                </div>            
+               <div style = "order: 3; display: flex; flex-shrink: 1">
+                <img id = "python-logo" style = "background-color: red;" src = "https://logos-world.net/wp-content/uploads/2021/10/Python-Symbol.png"> 
+               </div>
+                      
+            </div>
+                
             <br>
             <br>
             <br>
@@ -85,15 +126,14 @@
             <br>
             <br>
             
-
-            <form>
-                <span class = "prompt">Please input your birthday:</span>
-                <input id = "date" class = "forms">
-                <div>
-                    <textarea></textarea>
-                    <input type = "submit">                    
-                </div>
-            </form>
+            
+        
+            <div>
+                <h1 id = "gratitude">Props to the great teachers below</h1>
+                <iframe src="https://www.mikedane.com/" class = "special-mention">Failed sorry</iframe>
+                <iframe src="https://scrimba.com/teachers/uQQzvzuN" class = "special-mention">Failed sorry</iframe>
+            </div>
+        
             
         </footer>
         
