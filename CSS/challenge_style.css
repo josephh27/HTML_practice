@@ -1,0 +1,117 @@
+body{
+    background: linear-gradient(to right, rgb(198, 233, 221), rgb(179, 148, 179));
+    
+}
+
+
+#main{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-gap: 20px;
+    width: 100%;
+}
+
+.subtitle{
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+
+}
+
+.para-1 p{
+    padding-left: 10px;
+}
+
+.para-2 p{
+    padding-left: 10px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.sidebar{
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(218, 222, 227), rgb(179, 180, 181));
+    overflow: auto;
+    }
+
+.main-para{
+    background: red;
+}
+
+.para-1{
+    background: green;
+    display: flex;
+    justify-content: center;
+}
+
+.post{
+    border-color: rgb(19, 71, 71);
+    border-width: 2px;
+    border-style: solid;
+    transition: 0.3s ease-in-out 0.1s
+}
+
+.post:hover{
+    color: rgba(19, 71, 71, 0.4)
+}
+
+.post-title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-left: 40%;
+}
+
+.post-text{
+    padding-left: 5px;
+}
+
+.sidebar-link{
+    padding-left: 5px;
+}
+
+
+
+.para-2{
+    background: saddlebrown;
+
+}
+
+
+
+#image-1{
+    float: right;
+    width: 40%;
+    height: 90%;
+    margin: 20px;
+}
+
+
+.image-grid{
+    height: 3000px;
+    background: blue;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+
+    overflow: auto;
+}
+
+img[src^="../HTML/images"]{
+    width: 20vw;
+    height: 35vh;
+} 
+
+img[src^="../HTML/images"]:hover{
+    transform: scale(1.2);
+}
+
+.post > a{
+    text-decoration: none;
+}
