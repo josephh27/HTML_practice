@@ -43,6 +43,7 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: url("https://t4.ftcdn.net/jpg/03/62/05/31/360_F_362053188_oQ0WRHCFkIY4QlXS1S5d1i9bpYup67ll.jpg");
     background-size: cover;
+    -webkit-background-size: cover;
 }
 
 h1{
@@ -62,9 +63,8 @@ button{
     background-color: goldenrod;
     width: 150px;
     line-height: 30px;
-    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
-    font-weight: bold;
-    font-size: 18;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
     color: #016f32;
     border: none;
     transition: all 0.3s ease-in-out;
